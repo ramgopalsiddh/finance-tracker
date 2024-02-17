@@ -38,6 +38,10 @@ gem "jbuilder"
 # Add Devise gem for authantication [https://github.com/heartcombo/devise]
 gem 'devise'
 
+# style authantication using devise and bootstrap. Add Gem's and Run this Command [rails generate devise:views:bootstrap]
+gem "devise-i18n"
+gem "devise-bootstrap5"
+
 # Bootstrap for userinterface [https://github.com/twbs/bootstrap-rubygem]
 gem 'bootstrap', '~> 5.3.2'
 
