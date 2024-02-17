@@ -21,4 +21,6 @@ Things you may want to cover:
 
 * Deployment instructions
 
+* [I Foloow This Article for Add Bootstrap 5 in Rails 7  ](https://medium.com/@pietropugliesi/javascript-bootstrap-asset-bundling-in-ruby-on-rails-7-3640a220f2ce)
+
 * ...

@@ -38,6 +38,12 @@ gem "jbuilder"
 # Add Devise gem for authantication [https://github.com/heartcombo/devise]
 gem 'devise'
 
+# Bootstrap for userinterface [https://github.com/twbs/bootstrap-rubygem]
+gem 'bootstrap', '~> 5.3.2'
+
+gem 'jquery-rails'
+
+gem 'dartsass-sprockets'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ windows jruby ]
