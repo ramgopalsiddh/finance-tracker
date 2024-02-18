@@ -42,6 +42,11 @@ gem 'devise'
 gem "devise-i18n"
 gem "devise-bootstrap5"
 
+# Gem for Add gem 'alphavantage' Api for stock price [https://github.com/codespore/alphavantage_ruby] 
+# And for Access http request we use gem 'httparty' [https://github.com/jnunemaker/httparty]
+gem 'alphavantage'
+gem 'httparty'
+
 # Bootstrap for userinterface [https://github.com/twbs/bootstrap-rubygem]
 gem 'bootstrap', '~> 5.3.2'
 
