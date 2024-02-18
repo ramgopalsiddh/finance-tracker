@@ -54,6 +54,9 @@ gem 'jquery-rails'
 
 gem 'dartsass-sprockets'
 
+# Add font-awesome-rails gem for icons
+gem "font-awesome-rails"
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ windows jruby ]
 
