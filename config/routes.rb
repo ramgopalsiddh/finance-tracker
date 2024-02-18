@@ -10,4 +10,5 @@ Rails.application.routes.draw do
   # root "posts#index"
   # 
   root 'welcome#index'
+  get 'my_portfolio', to: 'users#my_portfolio'
 end
