@@ -1,5 +1,11 @@
+<div class="row">
+  <div class="col-md-5">
+    <%= render 'layouts/messages' %>
+  </div>
+</div>
+
 <% if @stock %>
-  <div class="card card-header results-block mt-5">
+  <div class="card card-header results-block">
     <strong> Symbol: </strong> <%= @stock.ticker %>
     <strong> Name: </strong> <%= @stock.name %>
     <strong> Price: </strong> <%= @stock.last_price %>
