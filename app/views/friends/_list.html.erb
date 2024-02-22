@@ -1,0 +1,25 @@
+<p></p>
+<div class="row">
+  <div class="col-9">
+    <table class="table table-bordered table-hover">
+      <thead>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">e-Mail</th>
+        <th scope="col">Actions</th>
+      </thead>
+      <tbody>
+        <% @friends.each do |friend| %>
+          <tr>
+            <th scope="row"><%= friend.first_name %></th>
+            <td><%= friend.last_name %></td>
+            <td><%= friend.email %></td>
+            <td>
+              <%= link_to 'Remove', '#', method: :delete, data: { confirm: "Are you sure?" }, class: 'btn btn-sm btn-primary' %>
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
