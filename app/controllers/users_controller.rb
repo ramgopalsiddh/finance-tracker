@@ -7,8 +7,29 @@ class UsersController < ApplicationController
     @friends = current_user.friends
   end
 
+  # Search friends 
   def search
-    render json: params[:friend] 
+    if params[:friend].present?
+      @friend = User.find_by(first_name: params[:friend])
+      @friend = User.find_by(last_name: params[:friend]) if !@friend 
+      @friend = User.find_by(email: params[:friend]) if !@friend
+
+      if @friend
+        respond_to do |format|
+          format.js { render partial: 'users/friend_result_js' }
+        end
+      else
+        respond_to do |format|
+          flash.now[:alert] = "Sorry, could not find the user"
+          format.js { render partial: 'users/friend_result_js' }
+        end
+      end
+    else
+      respond_to do |format|
+        flash.now[:alert] = "Please enter a name or email address to search"
+        format.js { render partial: 'users/friend_result_js' }
+      end
+    end
   end
 
 end

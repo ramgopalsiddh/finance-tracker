@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="col-md-6">
+    <%= render 'layouts/messages' %>
+  </div>
+</div>
+
+<% if @friend %>
+  <div class="card card-header results-block">
+    <strong> First Name: </strong> <%= @friend.first_name %>
+    <strong> Last Name: </strong> <%= @friend.last_name %>
+    <strong> Email: </strong> <%= @friend.email %>
+    <% if current_user != @friend %>
+      <%= link_to 'Follow friend?', '#', class: "btn btn-xs btn-success", method: :post %>
+    <% else %>
+      <span class="btn btn-primary badge">
+        That's you bro! Can't be friends with yourself!  
+      </span>
+    <% end %>
+  </div>
+<% end %>
