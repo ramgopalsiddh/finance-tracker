@@ -28,4 +28,20 @@ class User < ApplicationRecord
     "Anonymous"
   end
 
+
+  # Search friends by partial params 
+  def self.search(param)
+    param.strip!
+
+    matches = ( 
+      where( "first_name like ?", "%#{param}%" ) +
+      where( "last_name like ?", "%#{param}%" ) +
+      where( "email like ?", "%#{param}%" )
+    ).uniq
+  end
+
+
+  def self.matches(field_name, param)
+    where("#{field_name} like ?", "%#{param}%")
+  end
 end
