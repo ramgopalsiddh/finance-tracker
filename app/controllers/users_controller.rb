@@ -10,11 +10,10 @@ class UsersController < ApplicationController
   # Search friends 
   def search
     if params[:friend].present?
-      @friend = User.find_by(first_name: params[:friend])
-      @friend = User.find_by(last_name: params[:friend]) if !@friend 
-      @friend = User.find_by(email: params[:friend]) if !@friend
+      @friends = User.search(params[:friend])
+      @friends.delete(current_user)  # to avoid finding himself
 
-      if @friend
+      if @friends
         respond_to do |format|
           format.js { render partial: 'users/friend_result_js' }
         end
