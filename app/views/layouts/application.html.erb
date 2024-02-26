@@ -12,13 +12,18 @@
   </head>
 
   <body>
-    <!-- Navigation Bar -->
-    <%= render 'layouts/navigation' %>
-
-    <div class="container">
-    <!-- Messages and Alert -->
-      <%= render 'layouts/messages' %>
-      <%= yield %>
+    <div class="d-flex flex-column min-vh-100">
+        <div class="flex-grow-1">
+          <!-- Render Navigation Bar -->
+          <%= render 'layouts/navigation' %>
+          <div class="container">
+          <!-- Messages and Alert -->
+            <%= render 'layouts/messages' %>
+            <%= yield %>
+          </div>
+        </div>
+        <!-- Render Footer -->
+        <%= render 'layouts/footer' %>
     </div>
 
   </body>
