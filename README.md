@@ -1,3 +1,37 @@
+# Finance Tracker
+
+- This is a Finance Tracker Build with RubyOnRails & Bootstrap
+- Use [Devise](https://github.com/heartcombo/devise) for authentication
+
+- ### Features
+  1. You can search stock
+  2. Add Stock in your's portfolio
+  3. You can track upto 10 stocks at a time
+  4. You can search user
+  5. You can also show other user's profile
+  6. In other user's profile see user info and tracked stocks
+  7. You can also follow other user's
+  8. You can Signup/Create your profile
+  9. You can edit your profile
+
+---
+## YouTube demo video link 
+
+ - ### Project's YouTube video link :- https://youtu.be/jxFF07Vagnk
+---
+
+#### This Project is part of [Udemy Course "The Complete Ruby on Rails Developer Course"](https://www.udemy.com/course/the-complete-ruby-on-rails-developer-course/)
+
+---
+
+#### For more info OR suggestion contact me on
+
+- ### My Twitter :- <a href="https://twitter.com/ramgopalsiddh1/"> Twitter/ramgopal </a>
+
+- ### Portfolio :- <a href="https://ramgopal.dev/">ramgopal.dev</a>
+---
+
+
 ## Screenshots
 
 #### Sign up page
