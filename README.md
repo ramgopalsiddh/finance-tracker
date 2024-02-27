@@ -1,3 +1,28 @@
+## Screenshots
+
+#### Sign up page
+  <img src="screenshots/1_signup_form.png">
+
+#### Log in page
+  <img src="screenshots/2_login_form.png">
+
+#### Home/welcome page
+  <img src="screenshots/3_home.png">
+
+#### My Portfolio
+  <img src="screenshots/4_my_portfolio.png">
+
+#### My friends
+  <img src="screenshots/5_my_friends.png">
+
+#### User/friends details
+  <img src="screenshots/6_userdetails.png">
+
+#### Edit user info page
+  <img src="screenshots/7_edit_user.png">
+
+
+
 # README
 
 This README would normally document whatever steps are necessary to get the
