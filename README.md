@@ -2,6 +2,7 @@
 
 - This is a Finance Tracker Build with RubyOnRails & Bootstrap
 - Use [Devise](https://github.com/heartcombo/devise) for authentication
+- Use [Alpha Vantage Api](https://www.alphavantage.co/support/) for get stocks data
 
 - ### Features
   1. You can search stock
@@ -74,10 +75,11 @@ Things you may want to cover:
 
 * For Setup this project follow these steps
   1. Get code 
-  2. Run `bundle install` for install all Gem's from Gemfile
-  3. Run `rails db:migrate` for run Migrations and create db
-  4. Run Server `rails server`
-  5. visit [localhost:3000](http://127.0.0.1:3000) 
+  2. Set up [Alpha Vantage API key](https://www.alphavantage.co/support/#api-key)
+  3. Run `bundle install` for install all Gem's from Gemfile
+  4. Run `rails db:migrate` for run Migrations and create db
+  5. Run Server `rails server`
+  6. visit [localhost:3000](http://127.0.0.1:3000) 
 
 * System dependencies
 
